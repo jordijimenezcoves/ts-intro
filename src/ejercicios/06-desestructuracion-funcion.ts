@@ -2,7 +2,7 @@
     ===== Código de TypeScript =====
 */
 
-interface Producto {
+export interface Producto {
     desc: string;
     precio: number;
 }
@@ -17,7 +17,7 @@ const tableta: Producto = {
     precio: 350
 }
 
-function calculaISV( productos: Producto[] ): [number, number] {
+export function calculaISV( productos: Producto[] ): [number, number] {
     let total = 0;
 
     // productos.map( producto => {
@@ -36,11 +36,11 @@ function calculaISV( productos: Producto[] ): [number, number] {
     return [total, total * 0.15];    
 }
 
-const articulos = [telefono, tableta];
+// Se comenta el código de aquí para que el export e import de la función calculaISV no ejecute este código (se ejecuta el archivo completo al importar funciones. Esto no ocurre al importar interfaces)
+// const articulos = [telefono, tableta];
 
 // Desestructuración de array
-const [total, isv] = calculaISV(articulos);
+// const [total, isv] = calculaISV(articulos);
 
-console.log('Total: ', total);
-console.log('ISV: ', isv);
-
+// console.log('Total: ', total);
+// console.log('ISV: ', isv);
