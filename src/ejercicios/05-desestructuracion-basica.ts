@@ -28,8 +28,10 @@ const reproductor: Reproductor = {
 const autor = 'Fulano';
 
 // Desestructuración de objetos
+
 // Opción 1
 // const { volumen, segundo, cancion, detalles: { autor: autorDetalle } } = reproductor;
+
 // Opción 2 (más legible)
 const { volumen: vol, segundo, cancion, detalles } = reproductor;
 const { autor: autorDetalle } = detalles;

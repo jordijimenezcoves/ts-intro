@@ -35,3 +35,12 @@ class Heroe extends PersonaNormal {
 const ironman = new Heroe('Ironman', 45, 'Tony Stark');
 
 console.log(ironman);
+
+// Este es el objeto resultante que aparece por consola:
+const resultadoFinal = {
+    alterEgo: "Ironman",
+    direccion: "New York, USA",
+    edad: 45,
+    nombre: "Tony Stark",
+    nombreReal: "Tony Stark"
+}
